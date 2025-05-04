@@ -1,39 +1,66 @@
-#pragma once
+﻿#pragma once
 
+#include <memory>      // для std::unique_ptr
+#include <cstddef>     // для size_t
+#include <stdexcept>   // для std::out_of_range
+
+// Структура вузла (елемент списку)
+struct Node {
+    int data;
+    std::unique_ptr<Node> next;
+
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+// Клас однозв'язного списку
 class List {
 private:
-	struct Node
-	{
-		int data;
-		Node* next;
-	};
-
-	Node* head;
+    std::unique_ptr<Node> head;  // Умний вказівник на перший елемент
+    Node* tail;                  // Сирий вказівник на останній елемент (для PushBack)
+    size_t size;                 // Кількість елементів
 
 public:
-	List();
+    List();
+    ~List() = default;
 
-	~List();
+    // Основні операції
+    void PushBack(const int& value);
+    void PushFront(const int& value);
+    void PopBack();
+    void PopFront();
+    void Remove(const int& value);
 
-	//remove methods
-	void Clear();
-	void PopBack();
-	void PopFront();
-	void Remove(const int& value);
+    // Допоміжні методи
+    bool Find(const int& value) const;
+    bool isEmpty() const;
+    size_t Size() const;
+    void Clear();
+    void Show() const;
 
-	
-	bool Find(const int& value) const;
-	bool isEmpty() const;
-	size_t Size() const;
+    // Доступ за індексом
+    int& operator[](size_t index);
 
-	//push methods 
-	void PushBack(const int& value);
-	void PushFront(const int& value);
+    // Ітератор для циклів for-each
+    class Iterator {
+    private:
+        Node* current;
+    public:
+        Iterator(Node* node) : current(node) {}
 
+        int& operator*() const {
+            return current->data;
+        }
 
-	int& operator [] (size_t index);
+        Iterator& operator++() {
+            current = current->next.get();
+            return *this;
+        }
 
+        bool operator!=(const Iterator& other) const {
+            return current != other.current;
+        }
+    };
 
-	void Show() const;
-
+    Iterator begin() const { return Iterator(head.get()); }
+    Iterator end() const { return Iterator(nullptr); }
 };

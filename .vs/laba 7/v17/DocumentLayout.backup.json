@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "laba 7\\List.cpp",
               "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\List.cpp",
               "RelativeToolTip": "laba 7\\List.cpp",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAAAJsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAmwLAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-04T16:24:30.53Z"
+              "WhenOpened": "2025-05-04T16:24:30.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -42,11 +43,12 @@
               "Title": "List.h",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\List.h",
               "RelativeDocumentMoniker": "laba 7\\List.h",
-              "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\List.h*",
-              "RelativeToolTip": "laba 7\\List.h*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\List.h",
+              "RelativeToolTip": "laba 7\\List.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T15:44:57.153Z"
+              "WhenOpened": "2025-05-04T15:44:57.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +58,7 @@
               "RelativeDocumentMoniker": "laba 7\\main.cpp",
               "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\main.cpp",
               "RelativeToolTip": "laba 7\\main.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-04T15:27:12.782Z",
               "EditorCaption": ""

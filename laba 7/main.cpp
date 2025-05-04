@@ -1,48 +1,45 @@
-#include <iostream>	
-using namespace std;
-
-#include "List.h"
-
+﻿#include "List.h"
+#include <iostream>
 
 int main() {
-	List list;
+    try {
+        List list;
 
-	list.Show();
+        list.PushBack(10);
+        list.PushBack(20);
+        list.PushFront(5);
+        list.PushBack(30);
 
-	cout << endl;
+        std::cout << "Список після додавання елементів: ";
+        list.Show();
 
+        std::cout << "Елемент за індексом 1: " << list[1] << std::endl;
 
-	for (size_t i = 0; i < 10; i++)
-	{
-		list.PushBack(i);
+        list.Remove(10);
+        std::cout << "Список після видалення 10: ";
+        list.Show();
 
-	}
+        list.PopFront();
+        std::cout << "Список після PopFront: ";
+        list.Show();
 
-	list.Show();
+        list.PopBack();
+        std::cout << "Список після PopBack: ";
+        list.Show();
 
-	list.PopBack();
+        std::cout << "Чи містить 20? " << (list.Find(20) ? "Так" : "Ні") << std::endl;
+        std::cout << "Розмір списку: " << list.Size() << std::endl;
 
-	list.PopFront();
+        std::cout << "\nСпроба доступу за неправильним індексом:" << std::endl;
+        std::cout << list[5] << std::endl; // Очікувана помилка
 
-	list.Remove(3);
-	list.Show();
+    }
+    catch (const std::out_of_range& ex) {
+        std::cerr << "Помилка: " << ex.what() << std::endl;
+    }
+    catch (...) {
+        std::cerr << "Невідома помилка!" << std::endl;
+    }
 
-	int value = 1;
-
-	if (list.Find(value))
-	{
-		cout << "List has " << value << endl;
-	}
-	else
-	{
-		cout << "Has nothing " << endl;
-	}
-
-	if (list.isEmpty())
-	{
-		cout << "List is EMPTY! " << endl;
-	}
-
-	cout << "Size of the list = " << list.Size() << endl;
+    return 0;
 }
-
