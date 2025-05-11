@@ -1,66 +1,143 @@
 ﻿#pragma once
 
-#include <memory>      // для std::unique_ptr
-#include <cstddef>     // для size_t
-#include <stdexcept>   // для std::out_of_range
+#include <memory>
+#include <stdexcept>
+#include <iostream>
 
-// Структура вузла (елемент списку)
+template <typename T>
 struct Node {
-    int data;
-    std::unique_ptr<Node> next;
+    T data;
+    std::unique_ptr<Node<T>> next;
 
-    Node(int val) : data(val), next(nullptr) {}
+    Node(T val) : data(val), next(nullptr) {}
 };
 
-// Клас однозв'язного списку
+template <typename T>
 class List {
 private:
-    std::unique_ptr<Node> head;  // Умний вказівник на перший елемент
-    Node* tail;                  // Сирий вказівник на останній елемент (для PushBack)
-    size_t size;                 // Кількість елементів
+    std::unique_ptr<Node<T>> head;
+    Node<T>* tail;
+    size_t size;
 
 public:
-    List();
-    ~List() = default;
+    List() : head(nullptr), tail(nullptr), size(0) {}
 
-    // Основні операції
-    void PushBack(const int& value);
-    void PushFront(const int& value);
-    void PopBack();
-    void PopFront();
-    void Remove(const int& value);
+    void PushBack(const T& value) {
+        std::unique_ptr<Node<T>> newNode = std::make_unique<Node<T>>(value);
+        Node<T>* newTail = newNode.get();
 
-    // Допоміжні методи
-    bool Find(const int& value) const;
-    bool isEmpty() const;
-    size_t Size() const;
-    void Clear();
-    void Show() const;
+        if (!head) {
+            head = std::move(newNode);
+            tail = newTail;
+        } else {
+            tail->next = std::move(newNode);
+            tail = newTail;
+        }
+        ++size;
+    }
 
-    // Доступ за індексом
-    int& operator[](size_t index);
+    void PushFront(const T& value) {
+        std::unique_ptr<Node<T>> newNode = std::make_unique<Node<T>>(value);
+        if (!head) {
+            tail = newNode.get();
+        }
+        newNode->next = std::move(head);
+        head = std::move(newNode);
+        ++size;
+    }
 
-    // Ітератор для циклів for-each
-    class Iterator {
-    private:
-        Node* current;
-    public:
-        Iterator(Node* node) : current(node) {}
+    void PopBack() {
+        if (!head) return;
 
-        int& operator*() const {
-            return current->data;
+        if (!head->next) {
+            head.reset();
+            tail = nullptr;
+        } else {
+            Node<T>* current = head.get();
+            while (current->next->next) {
+                current = current->next.get();
+            }
+            current->next.reset();
+            tail = current;
+        }
+        --size;
+    }
+
+    void PopFront() {
+        if (!head) return;
+
+        head = std::move(head->next);
+        if (!head) tail = nullptr;
+        --size;
+    }
+
+    void Remove(const T& value) {
+        if (!head) return;
+
+        if (head->data == value) {
+            PopFront();
+            return;
         }
 
-        Iterator& operator++() {
+        Node<T>* prev = head.get();
+        while (prev->next && prev->next->data != value) {
+            prev = prev->next.get();
+        }
+
+        if (prev->next) {
+            if (prev->next.get() == tail) {
+                tail = prev;
+            }
+            prev->next = std::move(prev->next->next);
+            --size;
+        }
+    }
+
+    bool Find(const T& value) const {
+        Node<T>* current = head.get();
+        while (current) {
+            if (current->data == value) return true;
             current = current->next.get();
-            return *this;
+        }
+        return false;
+    }
+
+    bool isEmpty() const {
+        return size == 0;
+    }
+
+    size_t Size() const {
+        return size;
+    }
+
+    void Clear() {
+        head.reset();
+        tail = nullptr;
+        size = 0;
+    }
+
+    T& operator[](size_t index) {
+        if (index >= size) {
+            throw std::out_of_range("Index out of range");
         }
 
-        bool operator!=(const Iterator& other) const {
-            return current != other.current;
+        Node<T>* current = head.get();
+        for (size_t i = 0; i < index; ++i) {
+            current = current->next.get();
         }
-    };
+        return current->data;
+    }
 
-    Iterator begin() const { return Iterator(head.get()); }
-    Iterator end() const { return Iterator(nullptr); }
+    void Show() const {
+        if (!head) {
+            std::cout << "List is empty!" << std::endl;
+        } else {
+            Node<T>* current = head.get();
+            while (current) {
+                std::cout << current->data << " ";
+                current = current->next.get();
+            }
+            std::cout << std::endl;
+        }
+    }
 };
