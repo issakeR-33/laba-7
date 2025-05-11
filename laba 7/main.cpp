@@ -1,5 +1,6 @@
 ﻿#include "List.h"
 #include "DoublyLinkedList.h"
+#include "Queue.h"
 
 int main() {
     // Однозв'язний список
@@ -15,6 +16,21 @@ int main() {
     list2.PushBack("Second World");
     list2.PushBack("Last World");
     list2.Show();
+
+
+    Queue<int> queue;
+
+    queue.Enqueue(1);
+    queue.Enqueue(2);
+    queue.Enqueue(22);
+
+    queue.Show();
+
+    std::cout << queue.Peek() << std::endl;
+
+    queue.Dequeue();
+    queue.Show();
+ 
 
     return 0;
 }
