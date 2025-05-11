@@ -128,8 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DoublyLinkedList.h" />
+    <ClCompile Include="ExtraordinaryQeue.h" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />

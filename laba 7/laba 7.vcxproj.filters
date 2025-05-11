@@ -21,7 +21,10 @@
     <ClCompile Include="DoublyLinkedList.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.cpp">
+    <ClCompile Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtraordinaryQeue.h">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>

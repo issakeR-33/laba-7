@@ -36,7 +36,7 @@ public:
     }
 
     bool IsFull() const {
-        return !IsEmpty(); 
+        return false(); 
     }
 
     
