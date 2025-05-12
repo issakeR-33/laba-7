@@ -1,6 +1,9 @@
 ﻿#include "List.h"
 #include "DoublyLinkedList.h"
+#include "Stack.h"
 #include "Queue.h"
+#include "QueueArr.h"
+#include "StackArr.h"
 
 int main() {
     // Однозв'язний список

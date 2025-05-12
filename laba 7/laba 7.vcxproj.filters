@@ -27,12 +27,18 @@
     <ClCompile Include="ExtraordinaryQeue.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="QueueArr.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackArr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

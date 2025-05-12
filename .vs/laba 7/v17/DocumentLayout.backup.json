@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Vanya\\source\\repos\\laba 7\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\QueueArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\QueueArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\StackArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\StackArr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\Stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\Stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\ExtraordinaryQeue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\ExtraordinaryQeue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\Stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|solutionrelative:laba 7\\Stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E10512B6-6716-4946-AD7D-E77331661B19}|laba 7\\laba 7.vcxproj|C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\DoublyLinkedList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -39,6 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QueueArr.h",
+              "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\QueueArr.h",
+              "RelativeDocumentMoniker": "laba 7\\QueueArr.h",
+              "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\QueueArr.h*",
+              "RelativeToolTip": "laba 7\\QueueArr.h*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T06:59:44.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StackArr.h",
+              "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\StackArr.h",
+              "RelativeDocumentMoniker": "laba 7\\StackArr.h",
+              "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\StackArr.h",
+              "RelativeToolTip": "laba 7\\StackArr.h",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-12T06:59:00.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ExtraordinaryQeue.h",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\ExtraordinaryQeue.h",
               "RelativeDocumentMoniker": "laba 7\\ExtraordinaryQeue.h",
@@ -46,12 +80,11 @@
               "RelativeToolTip": "laba 7\\ExtraordinaryQeue.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T22:38:05.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T22:38:05.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "List.h",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\List.h",
               "RelativeDocumentMoniker": "laba 7\\List.h",
@@ -59,8 +92,7 @@
               "RelativeToolTip": "laba 7\\List.h",
               "ViewState": "AgIAAEQAAAAAAAAAAAAqwIoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T15:44:57.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T15:44:57.153Z"
             },
             {
               "$type": "Document",
@@ -70,14 +102,14 @@
               "RelativeDocumentMoniker": "laba 7\\Stack.h",
               "ToolTip": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\Stack.h",
               "RelativeToolTip": "laba 7\\Stack.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-11T22:18:25.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Queue.h",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\Queue.h",
               "RelativeDocumentMoniker": "laba 7\\Queue.h",
@@ -85,12 +117,11 @@
               "RelativeToolTip": "laba 7\\Queue.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-11T21:34:50.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T21:34:50.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DoublyLinkedList.h",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\DoublyLinkedList.h",
               "RelativeDocumentMoniker": "laba 7\\DoublyLinkedList.h",
@@ -98,12 +129,11 @@
               "RelativeToolTip": "laba 7\\DoublyLinkedList.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T22:06:36.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T22:06:36.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Vanya\\source\\repos\\laba 7\\laba 7\\main.cpp",
               "RelativeDocumentMoniker": "laba 7\\main.cpp",

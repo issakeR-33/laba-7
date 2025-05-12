@@ -130,11 +130,13 @@
     <ClCompile Include="DoublyLinkedList.h" />
     <ClCompile Include="ExtraordinaryQeue.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="QueueArr.h" />
     <ClCompile Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="StackArr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
